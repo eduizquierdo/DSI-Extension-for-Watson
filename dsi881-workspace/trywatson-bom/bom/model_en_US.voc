@@ -1,0 +1,20 @@
+uuid = ce06a057-17ac-4e3a-bcfc-f6a588c4ed3a
+# com.ibm.dsi.model.Client
+com.ibm.dsi.model.Client#concept.label = client
+com.ibm.dsi.model.Client.Client(java.lang.String,java.lang.String)#phrase.navigation = a new {client} where {0, latest comment} {1, name} 
+com.ibm.dsi.model.Client.latestComment#phrase.action = set the latest comment of {this} to {latest comment}
+com.ibm.dsi.model.Client.latestComment#phrase.navigation = {latest comment} of {this}
+com.ibm.dsi.model.Client.name#phrase.navigation = {name} of {this}
+com.ibm.dsi.model.Client.sentiment#phrase.navigation = {sentiment} of {this}
+com.ibm.dsi.model.Client.sentimentScore#phrase.navigation = {sentiment score} of {this}
+
+# com.ibm.dsi.model.CommentEvent
+com.ibm.dsi.model.CommentEvent#concept.label = comment event
+com.ibm.dsi.model.CommentEvent.CommentEvent(com.ibm.dsi.model.Client,java.lang.String,java.time.ZonedDateTime)#phrase.navigation = a new {comment event} where {0, client} {1, comment} {2, timestamp} 
+com.ibm.dsi.model.CommentEvent.client#phrase.action = set the client of {this} to {client}
+com.ibm.dsi.model.CommentEvent.client#phrase.clearer = clear the client of {this}
+com.ibm.dsi.model.CommentEvent.client#phrase.navigation = {client} of {this}
+com.ibm.dsi.model.CommentEvent.comment#phrase.action = set the comment of {this} to {comment}
+com.ibm.dsi.model.CommentEvent.comment#phrase.navigation = {comment} of {this}
+com.ibm.dsi.model.CommentEvent.timestamp#phrase.action = set the timestamp of {this} to {timestamp}
+com.ibm.dsi.model.CommentEvent.timestamp#phrase.navigation = {timestamp} of {this}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties xmlns="http://www.ibm.com/ia/SolutionProperties">
+	<!-- 
+		This file enables you to add custom properties to a solution project 
+		to override solution-wide defaults, or to provide information for an agent 
+		to pass along to an external system. For example, if your agent needs to 
+		connect to a database server, you can store the connection settings in a 
+		custom properties file in the solution project. To protect the value of a 
+		property, such as a password, you can include the encoded=true attribute. 
+		The override_required attribute indicates that the property value must be 
+		set by the administrator.
+		
+	<property name="db_username">JoeSmith</property> 
+	<property name="db_password" override_required="true"></property>
+	<property name="secret_property" encoded="true">{xor}KzosKzot</property>
+	-->
+	
+	<!--
+		You can also add custom properties to capture solution-specific log 
+		messages for analysis in SmartCloud Analytics.
+		
+	<ia_runtimeSolutionProperty propertyName="x2020HostPort" value="2020server.hostname.com" />
+	<ia_runtimeSolutionProperty propertyName="x2020UserName" value="admin2" />
+	<ia_runtimeSolutionProperty propertyName="x2020Password" value="admin2" />
+	-->
+	<!--
+		See the documentation for more examples and usage details.  
+	-->
+	
+	<property name="watson.alchemy_api.key">d62f18711658f1f6e090a6cb9dee6f8a9a8709a4</property> 
+	
+</properties>

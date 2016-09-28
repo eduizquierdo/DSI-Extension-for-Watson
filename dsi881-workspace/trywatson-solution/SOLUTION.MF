@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+IBM-IA-EntityAggregateExportVersion: 0
+IBM-IA-SolutionLocale: en_US
+IBM-IA-SolutionVersion: 0.3
+IBM-IA-SolutionName: trywatson_solution
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessModelDefinition>
+    <Bmd><![CDATA[a client is a business entity identified by a name.
+a client has a latest comment.
+a client has a sentiment.
+a client has a sentiment score (numeric).
+
+a comment event is a business event related to a client.
+a comment event has a comment.
+
+a watson sentiment provider is a data provider , 
+	 accepts a text , returns a sentiment, a score (numeric). ]]></Bmd>
+    <Bmi><![CDATA[a client is initialized from a comment event , where this client comes from the client of this comment event .
+
+a client is enriched by the watson sentiment provider , 
+	 given the text from the latest comment of this client , 
+     setting the sentiment of this client to the sentiment of this watson sentiment provider 
+         and the sentiment score of this client to the score of this watson sentiment provider .   ]]></Bmi>
+</BusinessModelDefinition>

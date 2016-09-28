@@ -1,0 +1,3 @@
+'trywatson-agent' is an agent related to a client  , 
+processing events :
+- comment event  , where this client  comes from the client of this comment event 

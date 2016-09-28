@@ -1,0 +1,94 @@
+property uuid "ee56c259-59ee-4df9-9ca6-7488ea9025b1"
+property bdl_generated "true"
+package com.ibm.dsi.model;
+
+
+public class Client
+        implements com.ibm.ia.model.Entity
+        property "de.generated" "true"
+        property "xsd.definedNamespaces" ""
+        property "xsd.entityElementName" "Client"
+        property "xsd.fileName" "model.xsd"
+        property "xsd.support" "true"
+        property "xsd.targetNamespace" "http://www.ibm.com/ia/xmlns/default/trywatson-bom/model"
+{
+    public string latestComment
+                property update "true"
+                property "xsd.name" "latestComment"
+                property "xsd.order" "0";
+    public string name
+                property "ia.entity.id" "true"
+                property update "true"
+                property "xsd.name" "name"
+                property "xsd.order" "1";
+    public final string sentiment
+                property update "true"
+                property "xsd.name" "sentiment"
+                property "xsd.order" "2";
+    public final double sentimentScore
+                property update "true"
+                property "xsd.name" "sentimentScore"
+                property "xsd.order" "3";
+    public Client(string name)
+                property "dataio.default" "true";
+    public Client(string latestComment, string name)
+                property groups "BALA"
+                property prototype "true";
+}
+
+public class CommentEvent
+        implements com.ibm.ia.model.Event
+        property "brl.facets" "ilog.rules.brl.Date:timestamp"
+        property "de.generated" "true"
+        property "xsd.definedNamespaces" ""
+        property "xsd.eventElementName" "CommentEvent"
+        property "xsd.fileName" "model.xsd"
+        property "xsd.support" "true"
+        property "xsd.targetNamespace" "http://www.ibm.com/ia/xmlns/default/trywatson-bom/model"
+{
+    public com.ibm.dsi.model.Client client
+                property "xsd.name" "client"
+                property "xsd.order" "0"
+                property "xsd.useMapping" "true";
+    public string comment
+                property "xsd.name" "comment"
+                property "xsd.order" "1";
+    public java.time.ZonedDateTime timestamp
+                property "ia.timestamp" "true"
+                property "xsd.name" "timestamp"
+                property "xsd.order" "2";
+    public CommentEvent(java.time.ZonedDateTime timestamp)
+                property "dataio.default" "true";
+    public CommentEvent(com.ibm.dsi.model.Client client, string comment, java.time.ZonedDateTime timestamp)
+                property groups "BALA"
+                property prototype "true";
+}
+
+public class WatsonSentimentProvider
+        property "de.generated" "true"
+        property "ia.dataProvider" "true"
+{
+    public com.ibm.dsi.model.WatsonSentimentProviderResponse processRequest(com.ibm.dsi.model.WatsonSentimentProviderRequest request)
+                throws java.lang.Exception;
+}
+
+public class WatsonSentimentProviderRequest
+        property "de.generated" "true"
+        property "ia.dataProvider" "com.ibm.dsi.model.WatsonSentimentProvider"
+{
+    public final string text;
+    public WatsonSentimentProviderRequest(string text)
+                property "dataio.default" "true";
+}
+
+public class WatsonSentimentProviderResponse
+        property "de.generated" "true"
+        property "ia.dataProvider" "com.ibm.dsi.model.WatsonSentimentProvider"
+{
+    public double score;
+    public string sentiment;
+    public WatsonSentimentProviderResponse(double score, string sentiment);
+    public WatsonSentimentProviderResponse()
+                property "dataio.default" "true";
+}
+

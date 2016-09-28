@@ -1,0 +1,13 @@
+emit a new comment event where 
+	the client is the client identified by "edu" ,
+	the comment is "I'm really dissapointed with the service, I will never use this services again" ,
+	time-stamped 9/28/2016 2:40:00 PM;
+
+emit a new comment event where 
+	the client is the client identified by "edu" ,
+	the comment is "I'm very happy with the service, I works pretty well. I will buy another" ,
+	time-stamped 9/28/2016 2:45:00 PM;
+
+	
+
+	 	 

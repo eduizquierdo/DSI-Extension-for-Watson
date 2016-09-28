@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ia.designer.berl:BerlRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ia.designer.berl="http://com.ibm.ia.designer/model/berl.ecore">
+  <name>Process new comment</name>
+  <uuid>ae9cd7c1-8586-40c9-b661-ecaeb31af6fe</uuid>
+  <priority>1000</priority>
+  <locale>en_US</locale>
+  <definition><![CDATA[when a comment event occurs 
+then set the latest comment of 'the client' to the comment of this comment event ; ]]></definition>
+</com.ibm.ia.designer.berl:BerlRule>

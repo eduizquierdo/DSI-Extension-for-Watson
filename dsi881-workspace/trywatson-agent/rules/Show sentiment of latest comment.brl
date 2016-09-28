@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ia.designer.berl:BerlRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ia.designer.berl="http://com.ibm.ia.designer/model/berl.ecore">
+  <name>Show sentiment of latest comment</name>
+  <uuid>4f821bf8-68e3-4eda-8f54-3e8f49eee76a</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[when a comment event occurs 
+if 
+	 the comment of this comment event is not empty
+then
+	print "** sentiment of latest comment is: "+ the sentiment of 'the client' + 
+	      " with score: "+the sentiment score of 'the client' ; ]]></definition>
+</com.ibm.ia.designer.berl:BerlRule>

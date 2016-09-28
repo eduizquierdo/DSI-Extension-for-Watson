@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><agent xmlns="http://www.ibm.com/ia/AgentDescriptor">
+  <name>trywatson-agent</name>
+  <kind>Rule</kind>
+  <entity>com.ibm.dsi.model.Client</entity>
+  <events>
+    <event>
+      <type>com.ibm.dsi.model.CommentEvent</type>
+      <mapping>{0}.client.get$Id()</mapping>
+    </event>
+  </events>
+</agent>

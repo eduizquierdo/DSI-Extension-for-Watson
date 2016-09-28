@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: trywatson-solution.trywatson-agent
+Bundle-Version: 0.3.0.qualifier
+
