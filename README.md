@@ -1,20 +1,18 @@
 # DSI-Extension-for-Watson
 this is a Data Provider Extension of an IBM ODM DSI solution project to call Watson Cognitive Services.
-Here are the instructions to create and configure such an extension.
 
-NOTE: A sample solution is provided. This solution features an extension that uses Watson Sentiment Analyzer
-	  through Watson Alchemy client API for Java. 
-
-NOTE: You will need a Watson Alchemy API service deployed in bluemix. This service gives you an api key. 
-      This Alchemy service is used to query Watson Sentimient Analyzer. Note that other Watson services may require
-	  user/password. The watson sevice in Bluemix, will give you all those details.
-
-NOTE: The API key is defined in the solution properties. 
-      The key of the sample solution correspond to a service deployed in my Bluemix account 
-	  You may want to deploy your own Alchemy API service in Bluemix.
+Here are the instructions to create and configure such an extension. A sample DSI solution project is also provided. 
+This solution features an extension that uses Watson Sentiment Analyzer through Watson Alchemy client API for Java. 
+For this reason, you will need Watson Alchemy API service deployed in bluemix. 
+Once you have this service deployed in Bluemix, you are given with an api key. 
+You will need this key to query Watson Sentiment Analyzer.
+In the sample DSI project, the api key is defined in the solution properties. This key correspond to the 
+Watson Alchemy service deployed in my Bluemix account. You can use it, but you may want to deploy your own 
+Alchemy API service in Bluemix. Then you can update the key in the solutin proporties.
 	  
 NOTE: A DSI extension for Watson requires adding in the DSI extension project the client libraries of Watson.
-      For this reason is not recommended to have other extensions non related to Watson in the same DSI extension project.
+      For this reason is not recommended to have other extensions non related to Watson in the same DSI 
+	  extension project.
 
 
 1. create a DSI extension project of your solution anad add to it a Data Provider Extension that, alt least, accept
